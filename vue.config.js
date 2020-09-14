@@ -3,7 +3,7 @@
 // 这里只列一部分，具体配置参考文档
 module.exports = {
   // 部署生产环境和开发环境下的URL。
-  publicPath: '/',
+  publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
 
   // outputDir: 在npm run build 或 yarn build 时 ，生成文件的目录名称（要和baseUrl的生产环境路径一致）
   outputDir: 'dist',
