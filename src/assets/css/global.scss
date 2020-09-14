@@ -1,0 +1,63 @@
+$theme-color: #dd6d60;
+$bgcolor: #f8d1cac9;
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#nprogress .bar {
+  background: $theme-color !important;
+}
+
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.el-menu-item {
+  padding-left: 10px !important;
+}
+
+.el-menu-item.is-active {
+  color: $theme-color !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: $theme-color !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active:hover {
+  color: #fff !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+  color: $theme-color !important;
+}
+
+.el-loading-spinner {
+  top: 40px !important;
+}
+.el-loading-spinner i {
+  color: $theme-color !important;
+}
+.el-loading-spinner .el-loading-text {
+  color: $theme-color !important;
+}
+.el-tabs__item.is-active {
+  color: $theme-color !important;
+}
+.el-tabs__active-bar {
+  background-color: $theme-color !important;
+}
+.el-tabs__item:hover {
+  color: $theme-color !important;
+}
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus {
+  border-color: $theme-color !important;
+}
