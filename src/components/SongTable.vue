@@ -110,6 +110,7 @@ export default {
     height: 70px;
     position: relative;
     margin-right: 15px;
+    flex-shrink: 0;
     img {
       width: 100%;
       height: 100%;
@@ -134,6 +135,8 @@ export default {
     }
   }
   .name {
+    text-overflow: ellipsis;
+    overflow: hidden;
     .alias {
       padding-left: 5px;
       font-size: 12px;

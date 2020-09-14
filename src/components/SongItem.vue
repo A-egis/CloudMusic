@@ -6,7 +6,9 @@
     </div>
     <div class="info">
       <div class="top-info">
-        <span class="name">{{music.name}}</span>
+        <span class="name">{{music.name}}
+          <span class="alias">{{(music.song.alias)|alias}}</span>
+        </span>
         <span class="mv" v-if="music.song.mvid!==0">
           <router-link :class="'mvlink'" :to="`/mvplay?id=${music.song.mvid}`">
             <i class="iconfont icon-mv"></i>
@@ -85,6 +87,7 @@ export default {
     height: 80px;
     position: relative;
     cursor: pointer;
+    flex-shrink: 0;
     img {
       width: 100%;
       height: 100%;
@@ -120,6 +123,11 @@ export default {
       align-items: center;
       .name {
         font-size: 16px;
+        .alias {
+      padding-left: 5px;
+      font-size: 12px;
+      color: #aaa;
+    }
       }
       .mv {
         padding-left: 5px;
